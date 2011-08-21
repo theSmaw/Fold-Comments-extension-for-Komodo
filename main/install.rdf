@@ -4,7 +4,7 @@
         <em:type>2</em:type>
         <em:id>foldcomments@bensmawfield.com</em:id>
         <em:name>Fold comments</em:name>
-        <em:version>0.1.0</em:version>
+        <em:version>0.1.1</em:version>
         <em:description>Allows comment blocks to be folded and expanded</em:description>
         <em:creator>Ben Smawfield</em:creator>
         <em:targetApplication>
