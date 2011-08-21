@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay PUBLIC "-//MOZILLA//DTD XUL V1.0//EN" "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<overlay id="foldcommentsOverlay" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://foldcomments/content/js/foldcomments.js" />
+	<broadcasterset id="broadcasterset_global">
+		<broadcaster id="cmd_foldcommentsexpand" key="key_cmd_foldcommentsexpand" desc="View: Expand all comments" oncommand="window.extensions.Foldcomments.expand();" />
+		<broadcaster id="cmd_foldcommentsfold" key="key_cmd_foldcommentsfold" desc="View: Fold all comments" oncommand="window.extensions.FoldComments.fold();" />
+	</broadcasterset>
+	<menupopup id="popup_view">
+		<menu id="foldcomments-menu" label="Fold comments">
+			<menupopup id="foldcomments-popup">
+				<menuitem id="cmd_foldcommentsexpand" label="Expand all comments" class="menu-iconic-wide" observes="cmd_foldcommentsexpand" oncommand="window.extensions.FoldComments.expand();" />
+				<menuitem id="cmd_foldcommentsfold" label="Fold all comments" class="menu-iconic-wide" observes="cmd_foldcommentsfold" oncommand="window.extensions.FoldComments.fold();" />
+			</menupopup>
+		</menu>
+	</menupopup>
+</overlay>
